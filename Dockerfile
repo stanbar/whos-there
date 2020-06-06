@@ -14,5 +14,3 @@ RUN npm install
 COPY . .
 
 CMD [ "npm", "run", "start" ]
-
-HEALTHCHECK --interval=60s CMD wget -qO- localhost:8080/health
